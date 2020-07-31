@@ -19,7 +19,7 @@ jobs:
       run: cd icu4c/source/ && make -j4
 
   release:
-    if: contains(github.ref, 'tags/v')
+#    if: contains(github.ref, 'tags/v')
     runs-on: ubuntu-latest
     needs: build
 
