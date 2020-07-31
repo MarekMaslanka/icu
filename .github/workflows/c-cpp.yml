@@ -46,8 +46,8 @@ jobs:
   publish:
 #    if: contains(github.ref, 'tags/v')
 
-    name: ${{ matrix.config.name }}
-    runs-on: ${{ matrix.config.os }}
+    name: "Linux Latest x64"
+    runs-on: ubuntu-latest
     needs: release
 
     steps:
