@@ -14,11 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: configure
-      run: cd icu4c/source/
-      run: ./runConfigureICU Linux --disable-renaming
+      run: cd icu4c/source/ && ./runConfigureICU Linux --disable-renaming
     - name: make
-      run: cd icu4c/source/
-      run: make
+      run: cd icu4c/source/ && make
     - name: make check
       run: make check
     - name: make distcheck
