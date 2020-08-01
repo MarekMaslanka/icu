@@ -56,7 +56,6 @@ jobs:
       with:
         path: ./upload_url
         name: upload_url
-
     - name: Download URL
       uses: actions/download-artifact@v1
       with:
